@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Tempat foto baru yang diupload dari admin panel akan disimpan
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "en"
+
+collections:
+  - name: "portfolio"
+    label: "Portofolio"
+    files:
+      - file: "content/portfolio.json"
+        label: "Daftar Foto Portofolio"
+        name: "portfolio"
+        fields:
+          - label: "Foto Portofolio"
+            name: "items"
+            widget: "list"
+            label_singular: "Foto"
+            summary: "{{title}} — {{fields.category}}"
+            fields:
+              - {label: "ID (jangan diubah)", name: "id", widget: "string", required: false}
+              - {label: "Judul", name: "title", widget: "string", hint: "Contoh: Wedding Andi & Sari"}
+              - label: "Kategori"
+                name: "category"
+                widget: "select"
+                hint: "Pilih kategori yang paling sesuai"
+                options:
+                  - {label: "Event & Korporat", value: "events"}
+                  - {label: "Produk & Katalog", value: "product"}
+                  - {label: "Portrait Profesional", value: "portrait"}
+                  - {label: "Corporate Team", value: "corporate"}
+                  - {label: "Fashion", value: "fashion"}
+                  - {label: "Model", value: "model"}
+                  - {label: "Travel", value: "travel"}
+                  - {label: "Landscape", value: "landscape"}
+                  - {label: "Public Figure", value: "public-figure"}
+                  - {label: "Sport & Running", value: "sports"}
+                  - {label: "Studio Setup", value: "studio"}
+              - label: "Gambar"
+                name: "image"
+                widget: "image"
+                hint: "Klik untuk upload foto baru dari HP/laptop"
