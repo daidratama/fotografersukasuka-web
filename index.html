@@ -16,10 +16,14 @@
   <div class="wrap">
     <div class="nav-logo">FOTOGRAFERSUKASUKA</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#layanan">Layanan</a></li>
-      <li><a href="#portofolio">Portofolio</a></li>
-      <li><a href="#booking">Booking</a></li>
-      <li><a class="cta" id="navWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">WhatsApp</a></li>
+      <li><a href="#layanan" data-i18n="nav_layanan">Layanan</a></li>
+      <li><a href="#portofolio" data-i18n="nav_portofolio">Portofolio</a></li>
+      <li><a href="#booking" data-i18n="nav_booking">Booking</a></li>
+      <li><a class="cta" id="navWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener" data-i18n="nav_whatsapp">WhatsApp</a></li>
+      <li class="lang-switch">
+        <button class="lang-btn active" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </div>
@@ -31,8 +35,8 @@
     <h1 id="heroTitle">Ambil <em>momen</em><br>yang berarti.</h1>
     <p class="lead" id="heroLead">Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.</p>
     <div class="hero-actions">
-      <a class="btn btn-solid" id="heroWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">Booking via WhatsApp</a>
-      <a class="btn btn-outline" href="#portofolio">Lihat Portofolio</a>
+      <a class="btn btn-solid" id="heroWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener" data-i18n="hero_btn_booking">Booking via WhatsApp</a>
+      <a class="btn btn-outline" href="#portofolio" data-i18n="hero_btn_portfolio">Lihat Portofolio</a>
     </div>
     <div class="hero-stats" id="heroStats">
       <div class="stat"><b>32K+</b><span>Followers Instagram</span></div>
@@ -51,9 +55,9 @@
 <section id="layanan">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">Layanan</span>
-      <h2>Satu tim, semua kebutuhan visual</h2>
-      <p>Dari dokumentasi event korporat sampai konten personal branding — dikerjakan oleh tim yang sama yang ada di balik @fotografersukasuka.</p>
+      <span class="tag" data-i18n="layanan_tag">Layanan</span>
+      <h2 data-i18n="layanan_heading">Satu tim, semua kebutuhan visual</h2>
+      <p data-i18n="layanan_desc">Dari dokumentasi event korporat sampai konten personal branding — dikerjakan oleh tim yang sama yang ada di balik @fotografersukasuka.</p>
     </div>
     <div class="services-grid" id="servicesGrid">
       <div class="service-card">
@@ -81,21 +85,21 @@
 <section id="portofolio" style="background:#FAFAF7;">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">Portofolio</span>
-      <h2>Hasil kerja terbaru</h2>
-      <p>Diperbarui langsung oleh tim Fotografersukasuka. Klik kategori untuk menyaring, atau klik foto untuk melihat lebih besar.</p>
+      <span class="tag" data-i18n="portfolio_tag">Portofolio</span>
+      <h2 data-i18n="portfolio_heading">Hasil kerja terbaru</h2>
+      <p data-i18n="portfolio_desc">Diperbarui langsung oleh tim Fotografersukasuka. Klik kategori untuk menyaring, atau klik foto untuk melihat lebih besar.</p>
     </div>
     <div class="filters" id="filters"></div>
     <div class="gallery" id="gallery"></div>
     <div class="load-more-wrap">
-      <button class="btn btn-outline" id="loadMoreBtn" style="display:none;">Lihat lebih banyak</button>
+      <button class="btn btn-outline" id="loadMoreBtn" style="display:none;" data-i18n="load_more">Lihat lebih banyak</button>
     </div>
     <div class="ig-cta">
       <div>
-        <h3>Lihat lebih banyak di Instagram</h3>
+        <h3 data-i18n="ig_cta_heading">Lihat lebih banyak di Instagram</h3>
         <p id="igCtaHandle">@fotografersukasuka · 32K+ followers</p>
       </div>
-      <a class="btn btn-solid" id="igCtaLink" href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener">Kunjungi Instagram</a>
+      <a class="btn btn-solid" id="igCtaLink" href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener" data-i18n="ig_cta_btn">Kunjungi Instagram</a>
     </div>
   </div>
 </section>
@@ -103,30 +107,30 @@
 <section id="booking" class="booking">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">Booking</span>
-      <h2>Siap bantu acara & konten Anda</h2>
+      <span class="tag" data-i18n="booking_tag">Booking</span>
+      <h2 data-i18n="booking_heading">Siap bantu acara & konten Anda</h2>
     </div>
     <div class="booking-grid">
       <div>
         <div class="booking-card">
           <div class="icon">📅</div>
-          <h3>1. Chat kebutuhan Anda</h3>
-          <p>Ceritakan jenis acara atau shoot yang Anda butuhkan, lokasi, dan tanggalnya lewat WhatsApp.</p>
+          <h3 data-i18n="booking_step1_title">1. Chat kebutuhan Anda</h3>
+          <p data-i18n="booking_step1_desc">Ceritakan jenis acara atau shoot yang Anda butuhkan, lokasi, dan tanggalnya lewat WhatsApp.</p>
         </div>
         <div class="booking-card">
           <div class="icon">💬</div>
-          <h3>2. Konfirmasi paket & jadwal</h3>
-          <p>Tim akan kirimkan pilihan paket sesuai kebutuhan, lalu mengunci jadwal setelah disepakati.</p>
+          <h3 data-i18n="booking_step2_title">2. Konfirmasi paket & jadwal</h3>
+          <p data-i18n="booking_step2_desc">Tim akan kirimkan pilihan paket sesuai kebutuhan, lalu mengunci jadwal setelah disepakati.</p>
         </div>
         <div class="booking-card">
           <div class="icon">📷</div>
-          <h3>3. Hari-H & hasil akhir</h3>
-          <p>Tim datang sesuai jadwal, dan hasil foto/video dikirim melalui link download dalam beberapa hari kerja.</p>
+          <h3 data-i18n="booking_step3_title">3. Hari-H & hasil akhir</h3>
+          <p data-i18n="booking_step3_desc">Tim datang sesuai jadwal, dan hasil foto/video dikirim melalui link download dalam beberapa hari kerja.</p>
         </div>
       </div>
       <div class="contact-panel">
-        <h3>Hubungi Langsung</h3>
-        <p>Respon cepat lewat WhatsApp untuk pertanyaan paket, harga, dan ketersediaan jadwal.</p>
+        <h3 data-i18n="contact_heading">Hubungi Langsung</h3>
+        <p data-i18n="contact_desc">Respon cepat lewat WhatsApp untuk pertanyaan paket, harga, dan ketersediaan jadwal.</p>
         <a class="btn btn-solid" id="contactWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">+62 877-7189-5469</a>
         <p class="note" id="contactNote">✉️ fotographersukasuka@gmail.com<br>📍 Central Jakarta, Indonesia</p>
       </div>
@@ -150,6 +154,7 @@
   <div class="lightbox-caption"></div>
 </div>
 
+<script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 <script src="js/site-content.js"></script>
 <script>

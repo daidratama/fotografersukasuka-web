@@ -17,21 +17,46 @@
 
   // Keep in sync with the category options in admin/config.yml
   const CATEGORY_LABELS = {
-    "events": "Event & Korporat",
-    "product": "Produk & Katalog",
-    "portrait": "Portrait Profesional",
-    "corporate": "Corporate Team",
-    "fashion": "Fashion",
-    "model": "Model",
-    "travel": "Travel",
-    "landscape": "Landscape",
-    "public-figure": "Public Figure",
-    "sports": "Sport & Running",
-    "studio": "Studio Setup"
+    id: {
+      "events": "Event & Korporat",
+      "product": "Produk & Katalog",
+      "portrait": "Portrait Profesional",
+      "corporate": "Corporate Team",
+      "fashion": "Fashion",
+      "model": "Model",
+      "travel": "Travel",
+      "landscape": "Landscape",
+      "public-figure": "Public Figure",
+      "sports": "Sport & Running",
+      "studio": "Studio Setup",
+    },
+    en: {
+      "events": "Events & Corporate",
+      "product": "Product & Catalog",
+      "portrait": "Professional Portrait",
+      "corporate": "Corporate Team",
+      "fashion": "Fashion",
+      "model": "Model",
+      "travel": "Travel",
+      "landscape": "Landscape",
+      "public-figure": "Public Figure",
+      "sports": "Sport & Running",
+      "studio": "Studio Setup",
+    },
   };
 
+  function currentLang() {
+    return (typeof getCurrentLang === "function" && getCurrentLang()) || "id";
+  }
+
+  function t(key) {
+    const lang = currentLang();
+    return (typeof UI_STRINGS !== "undefined" && UI_STRINGS[lang] && UI_STRINGS[lang][key]) || key;
+  }
+
   function labelFor(cat) {
-    return CATEGORY_LABELS[cat] || cat;
+    const lang = currentLang();
+    return (CATEGORY_LABELS[lang] && CATEGORY_LABELS[lang][cat]) || cat;
   }
 
   function buildFilters() {
@@ -39,14 +64,14 @@
     const frag = document.createDocumentFragment();
 
     const allBtn = document.createElement("button");
-    allBtn.className = "filter-btn active";
-    allBtn.textContent = "Semua";
+    allBtn.className = activeCategory === "all" ? "filter-btn active" : "filter-btn";
+    allBtn.textContent = t("filter_all");
     allBtn.dataset.cat = "all";
     frag.appendChild(allBtn);
 
     cats.forEach((cat) => {
       const btn = document.createElement("button");
-      btn.className = "filter-btn";
+      btn.className = activeCategory === cat ? "filter-btn active" : "filter-btn";
       btn.textContent = labelFor(cat);
       btn.dataset.cat = cat;
       frag.appendChild(btn);
@@ -73,7 +98,7 @@
         : allItems.filter((i) => i.category === activeCategory);
 
     if (filtered.length === 0) {
-      galleryEl.innerHTML = '<p class="gallery-empty">Belum ada foto di kategori ini.</p>';
+      galleryEl.innerHTML = `<p class="gallery-empty">${escapeHtml(t("gallery_empty"))}</p>`;
       loadMoreBtn.style.display = "none";
       return;
     }
@@ -93,6 +118,7 @@
     });
 
     galleryEl.appendChild(frag);
+    loadMoreBtn.textContent = t("load_more");
     loadMoreBtn.style.display = visibleCount < filtered.length ? "inline-flex" : "none";
   }
 
@@ -127,6 +153,13 @@
     renderGallery();
   });
 
+  document.addEventListener("fss:langchange", () => {
+    if (allItems.length) {
+      buildFilters();
+      renderGallery();
+    }
+  });
+
   // Mobile nav toggle
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.getElementById("navLinks");
@@ -145,7 +178,6 @@
       renderGallery();
     })
     .catch(() => {
-      galleryEl.innerHTML =
-        '<p class="gallery-empty">Portofolio belum bisa dimuat. Coba refresh halaman ini.</p>';
+      galleryEl.innerHTML = `<p class="gallery-empty">${escapeHtml(t("gallery_error"))}</p>`;
     });
 })();

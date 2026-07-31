@@ -53,24 +53,35 @@ collections:
         name: "site"
         fields:
           - {label: "Lokasi (dengan ikon 📍)", name: "hero_location", widget: "string"}
-          - {label: "Judul baris 1", name: "hero_title_line1", widget: "string", hint: "Contoh: Ambil"}
-          - {label: "Judul kata bergaris (highlight)", name: "hero_title_highlight", widget: "string", hint: "Contoh: momen"}
-          - {label: "Judul baris 2", name: "hero_title_line2", widget: "string", hint: "Contoh: yang berarti."}
-          - {label: "Deskripsi singkat", name: "hero_lead", widget: "text"}
+          - {label: "Judul baris 1 (Indonesia)", name: "hero_title_line1_id", widget: "string", hint: "Contoh: Ambil"}
+          - {label: "Judul baris 1 (English)", name: "hero_title_line1_en", widget: "string", hint: "Example: Capture"}
+          - {label: "Judul kata bergaris / highlight (Indonesia)", name: "hero_title_highlight_id", widget: "string", hint: "Contoh: momen"}
+          - {label: "Judul kata bergaris / highlight (English)", name: "hero_title_highlight_en", widget: "string", hint: "Example: the moment"}
+          - {label: "Judul baris 2 (Indonesia)", name: "hero_title_line2_id", widget: "string", hint: "Contoh: yang berarti."}
+          - {label: "Judul baris 2 (English)", name: "hero_title_line2_en", widget: "string", hint: "Example: that matters."}
+          - {label: "Deskripsi singkat (Indonesia)", name: "hero_lead_id", widget: "text"}
+          - {label: "Deskripsi singkat (English)", name: "hero_lead_en", widget: "text"}
           - {label: "Angka Pencapaian 1", name: "stat1_number", widget: "string"}
-          - {label: "Label Pencapaian 1", name: "stat1_label", widget: "string"}
+          - {label: "Label Pencapaian 1 (Indonesia)", name: "stat1_label_id", widget: "string"}
+          - {label: "Label Pencapaian 1 (English)", name: "stat1_label_en", widget: "string"}
           - {label: "Angka Pencapaian 2", name: "stat2_number", widget: "string"}
-          - {label: "Label Pencapaian 2", name: "stat2_label", widget: "string"}
+          - {label: "Label Pencapaian 2 (Indonesia)", name: "stat2_label_id", widget: "string"}
+          - {label: "Label Pencapaian 2 (English)", name: "stat2_label_en", widget: "string"}
           - {label: "Angka Pencapaian 3", name: "stat3_number", widget: "string"}
-          - {label: "Label Pencapaian 3", name: "stat3_label", widget: "string"}
-          - {label: "Teks Running Text", name: "marquee_text", widget: "string"}
+          - {label: "Label Pencapaian 3 (Indonesia)", name: "stat3_label_id", widget: "string"}
+          - {label: "Label Pencapaian 3 (English)", name: "stat3_label_en", widget: "string"}
+          - {label: "Teks Running Text (Indonesia)", name: "marquee_text_id", widget: "string"}
+          - {label: "Teks Running Text (English)", name: "marquee_text_en", widget: "string"}
           - label: "Layanan (3 kartu)"
             name: "services"
             widget: "list"
             fields:
-              - {label: "Judul Layanan", name: "title", widget: "string"}
-              - {label: "Deskripsi", name: "description", widget: "text"}
-              - {label: "Tag (pisahkan dengan koma)", name: "tags", widget: "string", hint: "Contoh: Event, Corporate"}
+              - {label: "Judul Layanan (Indonesia)", name: "title_id", widget: "string"}
+              - {label: "Judul Layanan (English)", name: "title_en", widget: "string"}
+              - {label: "Deskripsi (Indonesia)", name: "description_id", widget: "text"}
+              - {label: "Deskripsi (English)", name: "description_en", widget: "text"}
+              - {label: "Tag (Indonesia, pisahkan dengan koma)", name: "tags_id", widget: "string", hint: "Contoh: Event, Corporate"}
+              - {label: "Tag (English, pisahkan dengan koma)", name: "tags_en", widget: "string", hint: "Example: Event, Corporate"}
           - {label: "Nomor WhatsApp (tampilan)", name: "whatsapp_display", widget: "string", hint: "Contoh: +62 877-7189-5469"}
           - {label: "Link WhatsApp", name: "whatsapp_link", widget: "string", hint: "Format: https://wa.me/62xxxxxxxxxx"}
           - {label: "Email", name: "email", widget: "string"}

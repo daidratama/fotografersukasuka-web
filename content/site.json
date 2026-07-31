@@ -1,31 +1,48 @@
 {
   "hero_location": "Central Jakarta, Indonesia",
-  "hero_title_line1": "Ambil",
-  "hero_title_highlight": "momen",
-  "hero_title_line2": "yang berarti.",
-  "hero_lead": "Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.",
+  "hero_title_line1_id": "Ambil",
+  "hero_title_line1_en": "Capture",
+  "hero_title_highlight_id": "momen",
+  "hero_title_highlight_en": "the moment",
+  "hero_title_line2_id": "yang berarti.",
+  "hero_title_line2_en": "that matters.",
+  "hero_lead_id": "Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.",
+  "hero_lead_en": "Photographer, videographer, and event documentation for brands, corporates, and personal moments — by Fotografersukasuka.",
   "stat1_number": "32K+",
-  "stat1_label": "Followers Instagram",
+  "stat1_label_id": "Followers Instagram",
+  "stat1_label_en": "Instagram Followers",
   "stat2_number": "5+",
-  "stat2_label": "Tahun Pengalaman",
+  "stat2_label_id": "Tahun Pengalaman",
+  "stat2_label_en": "Years of Experience",
   "stat3_number": "10+",
-  "stat3_label": "Kategori Karya",
-  "marquee_text": "EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦",
+  "stat3_label_id": "Kategori Karya",
+  "stat3_label_en": "Work Categories",
+  "marquee_text_id": "EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦",
+  "marquee_text_en": "EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦",
   "services": [
     {
-      "title": "Event Documentation",
-      "description": "Dokumentasi acara korporat, seminar, gathering, hingga acara komunitas — foto & video lengkap dalam sehari.",
-      "tags": "Event, Corporate"
+      "title_id": "Event Documentation",
+      "title_en": "Event Documentation",
+      "description_id": "Dokumentasi acara korporat, seminar, gathering, hingga acara komunitas — foto & video lengkap dalam sehari.",
+      "description_en": "Documentation for corporate events, seminars, gatherings, and community events — full photo & video coverage in a day.",
+      "tags_id": "Event, Corporate",
+      "tags_en": "Event, Corporate"
     },
     {
-      "title": "Portrait & Personal Branding",
-      "description": "Professional portrait untuk pejabat, eksekutif, dan public figure — hasil bersih, konsisten, siap pakai untuk media.",
-      "tags": "Portrait, Public Figure"
+      "title_id": "Portrait & Personal Branding",
+      "title_en": "Portrait & Personal Branding",
+      "description_id": "Professional portrait untuk pejabat, eksekutif, dan public figure — hasil bersih, konsisten, siap pakai untuk media.",
+      "description_en": "Professional portraits for officials, executives, and public figures — clean, consistent, media-ready results.",
+      "tags_id": "Portrait, Public Figure",
+      "tags_en": "Portrait, Public Figure"
     },
     {
-      "title": "Product & Fashion",
-      "description": "Foto produk dan fashion untuk katalog, e-commerce, dan campaign brand — di studio maupun on-location.",
-      "tags": "Product, Fashion"
+      "title_id": "Product & Fashion",
+      "title_en": "Product & Fashion",
+      "description_id": "Foto produk dan fashion untuk katalog, e-commerce, dan campaign brand — di studio maupun on-location.",
+      "description_en": "Product and fashion photography for catalogs, e-commerce, and brand campaigns — in studio or on location.",
+      "tags_id": "Product, Fashion",
+      "tags_en": "Product, Fashion"
     }
   ],
   "whatsapp_display": "+62 877-7189-5469",
