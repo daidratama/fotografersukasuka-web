@@ -19,7 +19,7 @@
       <li><a href="#layanan">Layanan</a></li>
       <li><a href="#portofolio">Portofolio</a></li>
       <li><a href="#booking">Booking</a></li>
-      <li><a class="cta" href="https://wa.me/6287771895469" target="_blank" rel="noopener">WhatsApp</a></li>
+      <li><a class="cta" id="navWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">WhatsApp</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </div>
@@ -27,21 +27,24 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">📍 Central Jakarta, Indonesia</div>
-    <h1>Ambil <em>momen</em><br>yang berarti.</h1>
-    <p class="lead">Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.</p>
+    <div class="eyebrow" id="heroLocation">📍 Central Jakarta, Indonesia</div>
+    <h1 id="heroTitle">Ambil <em>momen</em><br>yang berarti.</h1>
+    <p class="lead" id="heroLead">Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.</p>
     <div class="hero-actions">
-      <a class="btn btn-solid" href="https://wa.me/6287771895469" target="_blank" rel="noopener">Booking via WhatsApp</a>
+      <a class="btn btn-solid" id="heroWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">Booking via WhatsApp</a>
       <a class="btn btn-outline" href="#portofolio">Lihat Portofolio</a>
     </div>
-    <div class="hero-stats">
+    <div class="hero-stats" id="heroStats">
       <div class="stat"><b>32K+</b><span>Followers Instagram</span></div>
       <div class="stat"><b>5+</b><span>Tahun Pengalaman</span></div>
       <div class="stat"><b>10+</b><span>Kategori Karya</span></div>
     </div>
   </div>
   <div class="marquee">
-    <span style="display:inline-block; animation: none;">EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦</span>
+    <div class="marquee-track" id="marqueeTrack">
+      <span>EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦</span>
+      <span>EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦</span>
+    </div>
   </div>
 </header>
 
@@ -52,7 +55,7 @@
       <h2>Satu tim, semua kebutuhan visual</h2>
       <p>Dari dokumentasi event korporat sampai konten personal branding — dikerjakan oleh tim yang sama yang ada di balik @fotografersukasuka.</p>
     </div>
-    <div class="services-grid">
+    <div class="services-grid" id="servicesGrid">
       <div class="service-card">
         <div class="num">01</div>
         <h3>Event Documentation</h3>
@@ -90,9 +93,9 @@
     <div class="ig-cta">
       <div>
         <h3>Lihat lebih banyak di Instagram</h3>
-        <p>@fotografersukasuka · 32K+ followers</p>
+        <p id="igCtaHandle">@fotografersukasuka · 32K+ followers</p>
       </div>
-      <a class="btn btn-solid" href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener">Kunjungi Instagram</a>
+      <a class="btn btn-solid" id="igCtaLink" href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener">Kunjungi Instagram</a>
     </div>
   </div>
 </section>
@@ -124,8 +127,8 @@
       <div class="contact-panel">
         <h3>Hubungi Langsung</h3>
         <p>Respon cepat lewat WhatsApp untuk pertanyaan paket, harga, dan ketersediaan jadwal.</p>
-        <a class="btn btn-solid" href="https://wa.me/6287771895469" target="_blank" rel="noopener">+62 877-7189-5469</a>
-        <p class="note">✉️ fotographersukasuka@gmail.com<br>📍 Central Jakarta, Indonesia</p>
+        <a class="btn btn-solid" id="contactWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">+62 877-7189-5469</a>
+        <p class="note" id="contactNote">✉️ fotographersukasuka@gmail.com<br>📍 Central Jakarta, Indonesia</p>
       </div>
     </div>
   </div>
@@ -135,8 +138,8 @@
   <div class="wrap footer-row">
     <div class="footer-brand">FOTOGRAFERSUKASUKA</div>
     <div>
-      <a href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/6287771895469" target="_blank" rel="noopener">WhatsApp</a>
+      <a id="footerIgLink" href="https://instagram.com/fotografersukasuka" target="_blank" rel="noopener">Instagram</a>
+      <a id="footerWaLink" href="https://wa.me/6287771895469" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 </footer>
@@ -148,6 +151,7 @@
 </div>
 
 <script src="js/app.js"></script>
+<script src="js/site-content.js"></script>
 <script>
   // Jika halaman ini dibuka lewat link undangan / reset password dari email,
   // langsung munculkan pop-up untuk membuat password, lalu masuk ke /admin.

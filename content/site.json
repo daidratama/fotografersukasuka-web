@@ -1,0 +1,37 @@
+{
+  "hero_location": "Central Jakarta, Indonesia",
+  "hero_title_line1": "Ambil",
+  "hero_title_highlight": "momen",
+  "hero_title_line2": "yang berarti.",
+  "hero_lead": "Photographer, videographer, dan dokumentasi event untuk brand, korporat, dan personal — dari Fotografersukasuka.",
+  "stat1_number": "32K+",
+  "stat1_label": "Followers Instagram",
+  "stat2_number": "5+",
+  "stat2_label": "Tahun Pengalaman",
+  "stat3_number": "10+",
+  "stat3_label": "Kategori Karya",
+  "marquee_text": "EVENT DOCUMENTATION ✦ CORPORATE PORTRAIT ✦ PRODUCT PHOTOGRAPHY ✦ FASHION ✦ SPORT & RUNNING ✦ PUBLIC FIGURE ✦ TRAVEL ✦",
+  "services": [
+    {
+      "title": "Event Documentation",
+      "description": "Dokumentasi acara korporat, seminar, gathering, hingga acara komunitas — foto & video lengkap dalam sehari.",
+      "tags": "Event, Corporate"
+    },
+    {
+      "title": "Portrait & Personal Branding",
+      "description": "Professional portrait untuk pejabat, eksekutif, dan public figure — hasil bersih, konsisten, siap pakai untuk media.",
+      "tags": "Portrait, Public Figure"
+    },
+    {
+      "title": "Product & Fashion",
+      "description": "Foto produk dan fashion untuk katalog, e-commerce, dan campaign brand — di studio maupun on-location.",
+      "tags": "Product, Fashion"
+    }
+  ],
+  "whatsapp_display": "+62 877-7189-5469",
+  "whatsapp_link": "https://wa.me/6287771895469",
+  "email": "fotographersukasuka@gmail.com",
+  "address": "Central Jakarta, Indonesia",
+  "instagram_handle": "@fotografersukasuka",
+  "instagram_link": "https://instagram.com/fotografersukasuka"
+}

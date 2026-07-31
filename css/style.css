@@ -80,8 +80,17 @@ a { color: inherit; }
   margin-top: 48px; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
   padding: 12px 0; overflow: hidden; white-space: nowrap;
 }
-.marquee span { font-weight: 700; letter-spacing: 1px; font-size: 14px; }
-.marquee span::after { content: " ✦ "; }
+.marquee-track {
+  display: inline-flex;
+  animation: marquee-scroll 24s linear infinite;
+}
+.marquee-track span {
+  font-weight: 700; letter-spacing: 1px; font-size: 14px; padding-right: 32px; white-space: nowrap;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 /* ---------- Section shell ---------- */
 section { padding: 84px 0; }

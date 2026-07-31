@@ -44,3 +44,36 @@ collections:
                 name: "image"
                 widget: "image"
                 hint: "Klik untuk upload foto baru dari HP/laptop"
+
+  - name: "settings"
+    label: "Pengaturan Website"
+    files:
+      - file: "content/site.json"
+        label: "Teks & Kontak Halaman Utama"
+        name: "site"
+        fields:
+          - {label: "Lokasi (dengan ikon 📍)", name: "hero_location", widget: "string"}
+          - {label: "Judul baris 1", name: "hero_title_line1", widget: "string", hint: "Contoh: Ambil"}
+          - {label: "Judul kata bergaris (highlight)", name: "hero_title_highlight", widget: "string", hint: "Contoh: momen"}
+          - {label: "Judul baris 2", name: "hero_title_line2", widget: "string", hint: "Contoh: yang berarti."}
+          - {label: "Deskripsi singkat", name: "hero_lead", widget: "text"}
+          - {label: "Angka Pencapaian 1", name: "stat1_number", widget: "string"}
+          - {label: "Label Pencapaian 1", name: "stat1_label", widget: "string"}
+          - {label: "Angka Pencapaian 2", name: "stat2_number", widget: "string"}
+          - {label: "Label Pencapaian 2", name: "stat2_label", widget: "string"}
+          - {label: "Angka Pencapaian 3", name: "stat3_number", widget: "string"}
+          - {label: "Label Pencapaian 3", name: "stat3_label", widget: "string"}
+          - {label: "Teks Running Text", name: "marquee_text", widget: "string"}
+          - label: "Layanan (3 kartu)"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Judul Layanan", name: "title", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+              - {label: "Tag (pisahkan dengan koma)", name: "tags", widget: "string", hint: "Contoh: Event, Corporate"}
+          - {label: "Nomor WhatsApp (tampilan)", name: "whatsapp_display", widget: "string", hint: "Contoh: +62 877-7189-5469"}
+          - {label: "Link WhatsApp", name: "whatsapp_link", widget: "string", hint: "Format: https://wa.me/62xxxxxxxxxx"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Alamat", name: "address", widget: "string"}
+          - {label: "Username Instagram (tampilan)", name: "instagram_handle", widget: "string"}
+          - {label: "Link Instagram", name: "instagram_link", widget: "string"}
