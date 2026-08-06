@@ -100,6 +100,27 @@ a { color: inherit; }
 
 /* ---------- Section shell ---------- */
 section { padding: 84px 0; }
+
+/* ---------- Client / brand logos ---------- */
+.clients-section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+.clients-title {
+  text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--grey); margin: 0 0 28px;
+}
+.clients-strip {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 40px 56px;
+}
+.clients-strip .client-logo {
+  height: 34px; max-width: 140px; object-fit: contain;
+  filter: grayscale(100%); opacity: 0.55; transition: opacity .2s ease, filter .2s ease;
+}
+.clients-strip .client-logo:hover { filter: grayscale(0%); opacity: 1; }
+@media (max-width: 640px) {
+  .clients-strip { gap: 28px 32px; }
+  .clients-strip .client-logo { height: 26px; max-width: 100px; }
+}
+
 .section-head { margin-bottom: 44px; max-width: 640px; }
 .section-head .tag {
   font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--yellow-deep);

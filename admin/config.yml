@@ -45,6 +45,23 @@ collections:
                 widget: "image"
                 hint: "Klik untuk upload foto baru dari HP/laptop"
 
+  - name: "clients"
+    label: "Brand & Klien"
+    files:
+      - file: "content/clients.json"
+        label: "Logo Brand yang Pernah Kerja Sama"
+        name: "clients"
+        fields:
+          - label: "Daftar Brand"
+            name: "items"
+            widget: "list"
+            label_singular: "Brand"
+            summary: "{{name}}"
+            fields:
+              - {label: "Nama Brand", name: "name", widget: "string", hint: "Contoh: Bank Mandiri"}
+              - {label: "Logo", name: "logo", widget: "image", hint: "Sebaiknya PNG dengan latar transparan, format landscape/persegi"}
+              - {label: "Link Website Brand (opsional)", name: "url", widget: "string", required: false}
+
   - name: "settings"
     label: "Pengaturan Website"
     files:
