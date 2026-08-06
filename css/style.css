@@ -112,13 +112,13 @@ section { padding: 84px 0; }
   gap: 40px 56px;
 }
 .clients-strip .client-logo {
-  height: 60px; max-width: 200px; object-fit: contain;
+  height: 96px; max-width: 280px; object-fit: contain;
   filter: grayscale(100%); opacity: 0.55; transition: opacity .2s ease, filter .2s ease;
 }
 .clients-strip .client-logo:hover { filter: grayscale(0%); opacity: 1; }
 @media (max-width: 640px) {
   .clients-strip { gap: 28px 32px; }
-  .clients-strip .client-logo { height: 44px; max-width: 140px; }
+  .clients-strip .client-logo { height: 64px; max-width: 180px; }
 }
 
 .section-head { margin-bottom: 44px; max-width: 640px; }
