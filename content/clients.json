@@ -43,6 +43,14 @@
     {
       "logo": "/images/uploads/sony-logo-png_seeklogo-129420.png",
       "name": "Sony"
+    },
+    {
+      "logo": "/images/uploads/jete-indonesia-logo.png",
+      "name": "JETE"
+    },
+    {
+      "logo": "/images/uploads/logo_baywalk.webp",
+      "name": "Baywalk"
     }
   ]
 }
